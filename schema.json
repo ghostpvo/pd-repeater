@@ -1,0 +1,72 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "RepeaterCustom",
+    "friendlyName": "Repeater Custom",
+    "description": "The custom Budibase component which are replacing and increase standart functionality of budibase 'Repeater' component.",
+    "icon": "Actions",
+    "settings": [
+      {
+        "type": "static",
+        "key": "data",
+        "label": "Data"
+      },
+      {
+        "type": "text",
+        "key": "id",
+        "label": "id(key)"
+      },
+      {
+        "type": "text",
+        "key": "title",
+        "label": "Title(key)"
+      },
+      {
+        "type": "text",
+        "key": "desciption",
+        "label": "Description(key)"
+      },
+      {
+        "type": "text",
+        "key": "label1",
+        "label": "Label 1"
+      },
+      {
+        "type": "text",
+        "key": "additional1",
+        "label": "Additional 1(key)"
+      },
+      {
+        "type": "text",
+        "key": "label2",
+        "label": "Label 2"
+      },
+      {
+        "type": "text",
+        "key": "additional2",
+        "label": "Additional 2(key)"
+      },
+      {
+        "type": "text",
+        "key": "label3",
+        "label": "Label 3"
+      },
+      {
+        "type": "text",
+        "key": "additional3",
+        "label": "Additional 3(key)"
+      },
+      {
+        "type": "text",
+        "key": "label4",
+        "label": "Label 4"
+      },
+      {
+        "type": "text",
+        "key": "additional4",
+        "label": "Additional 4(key)"
+      }
+    ]
+  }
+}
