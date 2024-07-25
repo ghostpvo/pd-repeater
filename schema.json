@@ -8,7 +8,7 @@
     "icon": "Actions",
     "settings": [
       {
-        "type": "static",
+        "type": "schema",
         "key": "data",
         "label": "Data"
       },
