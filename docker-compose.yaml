@@ -1,0 +1,25 @@
+version: "3"
+services:
+  budibase:
+    restart: unless-stopped
+    image: budibase/budibase:latest
+    ports:
+      - 10000:80
+    environment:
+      API_ENCRYPTION_KEY: LBjkszn1eTS9QpI05djvHHJaT3pXRmRO
+      JWT_SECRET: 9sd8ocnM3UfjsLXcSOxAUOIS5dmUcPXh
+      MINIO_ACCESS_KEY: k1LjHAFEFXCbGovAc7agv0rTiz42HnDg
+      MINIO_SECRET_KEY: 4JM1x9ivPLWhrEVw59Ad9fsjoGcbgmNZ
+      REDIS_PASSWORD: a4BqFqsSm0qpISovYFsxA5q1sNbJ4OVr
+      INTERNAL_API_KEY: sJgpJ3fxBkqm49YyfQHkRCiwPZebFlCO
+      COUCHDB_USER: admin
+      COUCHDB_PASSWORD: LqUsllq46cDZ4uEvjzWbK9mhmuremzQi
+      PLUGINS_DIR: /plugins
+      BB_ADMIN_USER_EMAIL: admin@admin.com
+      BB_ADMIN_USER_PASSWORD: admin
+    volumes:
+      - budibase_data:/data
+      - /Users/gh0st/PeakDefence/compliance-suite/compliance-suite/plugins/RepeaterCustom:/plugins
+volumes:
+  budibase_data:
+    driver: local
